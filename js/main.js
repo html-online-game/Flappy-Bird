@@ -6,7 +6,7 @@ var currentstate, loopGameloop, loopPipeloop, removePipeloop, debugmode = !1,
     }),
     gravity = .25,
     velocity = 0,
-    position = 180,
+    position = 220,
     rotation = 0,
     jump = -4,
     flyArea = 420,
@@ -42,7 +42,7 @@ function setCookie(e, t, o) {
 }
 
 function showSplash() {
-    currentstate = states.SplashScreen, velocity = 0, position = 180, rotation = 0, score = 0, $("#player").css({
+    currentstate = states.SplashScreen, velocity = 0, position = 220, rotation = 0, score = 0, $("#player").css({
         y: 0,
         x: 0
     }), updatePlayer($("#player")), soundSwoosh.stop(), soundSwoosh.play(), $(".pipe").remove(), pipes = [], $(".animated").css("animation-play-state", "running"), $(".animated").css("-webkit-animation-play-state", "running"), $("#splash").transition({
